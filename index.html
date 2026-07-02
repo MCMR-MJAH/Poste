@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Distance Tracker</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="menu">☰</div>
+    <div class="title">Distance Tracker</div>
+    <div class="menu">⋮</div>
+  </div>
+
+  <!-- MAP -->
+  <div id="map"></div>
+
+  <!-- FLOAT INFO -->
+  <div class="floating">
+    <div class="card">
+      📍 GPS Accuracy <br><b>±4.2 m</b>
+    </div>
+    <div class="card right">
+      📡 GPS Status <br><b>Good</b>
+    </div>
+    <div class="card compass">
+        🧭 Compass <br>
+        <div class="compass-icon">⬆</div>
+    </div>
+  </div>
+
+  <!-- BOTTOM SHEET -->
+  <div class="bottom-sheet">
+
+    <div class="stats">
+      <div>
+        <small>DISTANCE</small>
+        <h3 id="distance">0 m</h3>
+      </div>
+
+      <div>
+        <small>DURATION</small>
+        <h3 id="duration">00:00</h3>
+      </div>
+
+      <div>
+        <small>MAX LIMIT</small>
+        <h3>100 m</h3>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn" class="start">▶ START</button>
+      <button id="endBtn" class="end">■ END</button>
+    </div>
+
+    <p class="hint">Tap START to begin tracking your distance</p>
+
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="assets/js/ui.js"></script>
+
+</body>
+</html>
